@@ -13,15 +13,22 @@ public class Task01 {
 		double cha;
 		
 		x = 1;
-		y = 2;
+		y = 0;
 		
 		sum = x + y;
-		raz = x - y;
-		pro = x * y;
-		cha = x / y;
+		System.out.println("сумма = " + sum);
 		
-		System.out.println("сумма = " + sum + "; разность = " + raz + "; произведение = " + pro + "; частное = " + cha);
-
+		raz = x - y;
+		System.out.println("разность = " + raz);
+		
+		pro = x * y;
+		System.out.println("произведение = " + pro); 
+		
+		cha = x / y;
+		if (y == 0) {
+			System.out.println("деление на ноль, y = " + y);
+		}else System.out.println("частное = " + cha);
+		
 	}
 
 }
